@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Masivian.Roulette.Entities</AssemblyName>
+    <RootNamespace>Masivian.Roulette.Entities</RootNamespace>
+    <Configurations>Debug;Release;Azure;DataBase</Configurations>
+	
+	<ProjectGuid>{295a42a3-88e0-4180-8433-26a646161009}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Extendidas\**" />
+    <EmbeddedResource Remove="Entities\Extendidas\**" />
+    <None Remove="Entities\Extendidas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
